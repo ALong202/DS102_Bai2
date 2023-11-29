@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import pickle as pkl
 import numpy as np
-import sklearn
+
 
 #import matplotlib.pyplot as plt
 #import seaborn as sns
@@ -20,9 +20,9 @@ if image is not None:
   st.image(image, caption='Test image')
 
   if st.button('Predict'):
-    image = image.resize((227*227*3,1))
+    image = image.resize((227*227*3, 1))
     vector = np.array(image)
-    lable = str(st.write(model.predict(vector))[0])
+    lable = str(model.predict(model.predict(vector))[0])
     
     
     st.header('Result')
