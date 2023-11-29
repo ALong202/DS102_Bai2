@@ -8,7 +8,7 @@ import seaborn as sns
 
 class_list = {'0': 'Normal','1':'Pneumonia'}
 
-input = open('', 'rb')
+input = open('lrc_xray.plk', 'rb')
 model = plk.load(input)
 
 
