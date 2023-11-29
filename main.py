@@ -6,15 +6,15 @@ import numpy as np
 #import matplotlib.pyplot as plt
 #import seaborn as sns
 
-class_list = {'0': 'Normal','1':'Pneumonia'}
+class_list = {'0': 'Normal', '1': 'Pneumonia'}
 st.title('Pneumonia Detection')
 
-
-input = open('lrc_xray.pkl', 'rb')
-model = plk.load(input)
+input_model = open('lrc_xray.pkl', 'rb')
+model = pkl.load(input)
 
 st.header('Upload an image')
-image = st.file_uploader('choose an image', type= (['png','jpg','jpeg']))
+image = st.file_uploader('Choose an image', type=['png', 'jpg', 'jpeg'])
+
 
 if image is not None:
   image = Image.open(image)
