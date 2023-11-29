@@ -12,8 +12,8 @@ input = open('lrc_xray.plk', 'rb')
 model = plk.load(input)
 
 
-st.header('Upload a image')
-image = st.file_uploader('', type= (['png','jpg','jpeg']))
+st.header('Upload an image')
+image = st.file_uploader('choose an image', type= (['png','jpg','jpeg']))
 
 if image is not None:
   image = Image.open(image)
