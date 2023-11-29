@@ -8,7 +8,7 @@ import numpy as np
 
 class_list = {'0': 'Normal','1':'Pneumonia'}
 
-input = open('lrc_xray.plk', 'rb')
+input = open('lrc_xray.pkl', 'rb')
 model = plk.load(input)
 
 
