@@ -7,6 +7,8 @@ import numpy as np
 #import matplotlib.pyplot as plt
 #import seaborn as sns
 
+class_list = {'0': 'Normal','1':'Pneumonia'}
+st.title('Pneumonia Detection')
 
 input_model = open('lrc_xray.pkl', 'rb')
 model = pkl.load(input)
