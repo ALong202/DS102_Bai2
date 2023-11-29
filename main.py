@@ -5,3 +5,5 @@ import numpy
 
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+class_list = {'0': 'Normal','1':'Pneumonia'}
